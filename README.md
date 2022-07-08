@@ -11,29 +11,24 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Some opinionated widgets that can be used for quickly developing Settings screen UI for Flutter apps.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+To use this package, add `some_settings_ui` as a
+[dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).
+
+## Example
+
+A simple usage example of the ```SliderDialogListTile``` widget:
 
 ```dart
-const like = 'sample';
+SliderDialogListTile(
+  title: const Text('A custom setting'),
+  value: _customSettingValue,
+  min: 2.0,
+  max: 36.0,
+  onChanged: (double value) => setState(() => _customSettingValue = value),
+  onDisplayValue: (value) => '$value custom units',
+),
 ```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
