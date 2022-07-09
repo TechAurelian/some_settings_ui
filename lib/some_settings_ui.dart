@@ -6,4 +6,4 @@ library some_settings_ui;
 
 // Widgets
 export 'src/widgets/slider_dialog_list_tile.dart' show SliderDialogListTile;
-
+export 'src/widgets/radio_dialog_list_tile.dart' show RadioDialogListTile;
